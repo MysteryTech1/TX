@@ -2227,4 +2227,11 @@ video {
   height: auto;
 }
 
-
+#custom-loader {
+    background: #000 url(assets\img\loader.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed ;
+    z-index : 100;
+}
