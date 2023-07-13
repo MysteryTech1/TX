@@ -37,7 +37,7 @@
               <img src="assets/img/logo.png" alt="TINK ETHIX" class="logo-pic">
               <p></p>
             </a>
-            <button class="header--cta cta">Send your Projects</button>
+            <button class="header--cta cta">Register Now !!</button>
             <div class="header--nav-toggle">
               <span></span>
             </div>
@@ -61,8 +61,8 @@
                   
                   <div class="section-technologies" id="tech">
                     <div class="section-headings">
-                        <h14 class="heading-stroke-only">Tinkerfest </h14>
-                        <h14><br>Coming Soon..</h14>
+                        <h14 class="heading-stroke-only">TinkerFest'23 </h14>
+                        <h13><br>Coming Soon..</h13>
                     </div>
                   <button class="cta">Register Now !!
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,28 @@
                     <span class="btn-background"></span>
                   </button>
                   
-                </div>
+                  <div class="fest-time">
+                    <div>
+                      <p id="days">00</p>
+                      <span>Days</span>
+                    </div>
+                    <div>
+                      <p id="hours">00</p>
+                      <span>Hours</span>
+                    </div>
+                    <div>
+                      <p id="minutes">00</p>
+                      <span>Minutes</span>
+                    </div>
+                    <div>
+                      <p id="seconds">00</p>
+                      <span>Seconds</span>
+                    </div>
+
+                  </div>
+                
+
+               <!-----</div>
                 <div class="intro--options">
                   <a href="#0">
                     <h3>Pitch Fest</h3>
@@ -90,15 +111,15 @@
                     <h3>Robo Soccer</h3>
 
                   </a>
-                </div>
+                </div>-->
               </div>
             </li>
             <li class="l-section section">
               <div class="work">
                 <div class="section-technologies" id="tech">
                   <div class="section-headings">
-                      <h14 class="heading-stroke-only">Team </h14>
-                      <h14><br>Member</h14>
+                      <h15 class="heading-stroke-only"><span>Team</span> Member </h15>
+                      
                   </div>
                 <div class="work--lockup">
                   <ul class="slider">
@@ -295,8 +316,8 @@
               <div class="about">
                 <div class="section-technologies" id="tech">
                   <div class="section-headings">
-                      <h14 class="heading-stroke-only">About</h14>
-                      <h14><br>US</h14>
+                      <h15 class="heading-stroke-only">About</h15>
+                      <h15><br>US</h15>
                   </div>
                   <video controls autoplay>
                     <source src="assets/img/A.mp4" type="video/mp4">
@@ -336,8 +357,8 @@
               <div class="hire">
                 <div class="section-technologies" id="tech">
                   <div class="section-headings">
-                      <h14 class="heading-stroke-only">Register Now !!</h14>
-                      <h14><br>For TinkerFest..</h14>
+                      <h15 class="heading-stroke-only">Register Now !!</h15>
+                      <h15><br>For TinkerFest..</h15>
                   </div>
               </div>
               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciEO51epeS6RZh9RZcy8WhT9g2tV_ahdVSbFNyNsK5Do2YcA/viewform?embedded=true" width="510" height="1441" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -369,6 +390,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="assets/js/functions-min.js"></script>
+
+  <script>
+    var countDownDate = new Date("JUL 28, 2023 00:00:00").getTime();
+    var x = setInterval(function(){
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+    
+    }, 1000);
+    </script>
 </body>
 
 </html>
